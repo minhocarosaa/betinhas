@@ -20,3 +20,13 @@ CREATE TABLE conta (
  saldo decimal(10,2)
 );
 
+CREATE TABLE produto (
+ id_produto SERIAL PRIMARY KEY,
+ nome varchar(255) not null ,
+ tendencia varchar(255)
+ novidade boolean
+ preco_base decimal(10,2) not null ,
+ id_loja bigint not null ,
+ id_categoria bigint bigint not null ,
+);
+
